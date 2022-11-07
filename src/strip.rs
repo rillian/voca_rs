@@ -88,7 +88,8 @@ fn strip_html_tags(subject: &str) -> String {
                         unicode_string_range(subject, i, i + 2).as_str(),
                         "< ",
                         0,
-                ) {
+                    )
+                {
                     advance = true;
                 } else if state == StateMode::Output {
                     advance = true;
